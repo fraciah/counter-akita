@@ -1,0 +1,45 @@
+$primary-color: orange;
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 250px;
+  width: 600px;
+  border-radius: 10px;
+  background: rgb(212, 211, 211);
+
+  .counter-title {
+    font-size: 4rem;
+  }
+
+  .counter-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .count {
+      font-size: 2rem;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      background-color: $primary-color;
+
+      &.subtract {
+        background: rgb(213, 70, 70);
+      }
+
+      &.add {
+        background: rgb(45, 143, 45);
+      }
+    }
+  }
+}

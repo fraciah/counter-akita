@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { CounterComponent } from '../../../../libs/features/counter/counter.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [RouterModule, CounterComponent],
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: '<app-counter/>',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
