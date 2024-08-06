@@ -19,7 +19,7 @@ export class CounterComponent implements OnInit {
       doc(collection(db, 'counters'), this.userId)
     );
     if (counterDoc.exists()) {
-      this.count = counterDoc.data()['count'] || 10;
+      this.count = counterDoc.data()['count'] || 0;
     }
   }
 
