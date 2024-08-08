@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@first-monorepo/elements": ["libs/elements/src/index.ts"],
+      "@first-monorepo/features": ["libs/features/src/index.ts"],
+      "@first-monorepo/models": ["libs/models/src/index.ts"],
+      "@first-monorepo/state": ["libs/state/src/index.ts"],
+      "@first-monorepo/utils": ["libs/utils/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
